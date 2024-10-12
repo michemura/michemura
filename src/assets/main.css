@@ -1,0 +1,32 @@
+/*@import './base.css'; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Principal;
+  src: url(./fonts/3270NerdFontPropo-Regular.ttf);
+  font-weight: normal;
+}
+body {
+  background-color: black;
+  color: #65a30d;
+  font-family: Principal;
+  font-size: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+/*
+#app {
+}
+
+@media (hover: hover) {
+}
+
+@media (min-width: 1024px) {
+  #app {
+  }
+}
+*/
