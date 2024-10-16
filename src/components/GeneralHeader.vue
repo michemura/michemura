@@ -31,6 +31,11 @@ import { RouterLink } from 'vue-router'
           >Blog
         </RouterLink>
         <RouterLink
+          to="/coliseum"
+          class="justify-center content-center transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+          >Coliseum
+        </RouterLink>
+        <RouterLink
           to="/about"
           class="flex flex-row items-center content-center transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
         >

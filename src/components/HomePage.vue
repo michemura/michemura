@@ -8,10 +8,44 @@ defineProps({
 </script>
 
 <template>
-  <div class="greetings">
+  <div class="typewriter">
     <h1 class="green">{{ msg }}</h1>
-    <h3>Bienvenido a mi casa</h3>
+    <h3 data-textify class="hola">Bienvenido a mi casa</h3>
   </div>
 </template>
 
-<style scoped></style>
+<style>
+.typewriter {
+  display: flex;
+  width: 279px;
+}
+.typewriter h3 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2.5s steps(40, end);
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+</style>
